@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lap Counter:"
+        android:text="@string/lap_counter"
         android:id="@+id/lapCounterLabel"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -18,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Speedometer:"
+        android:text="@string/speedometer"
         android:id="@+id/SpeedometerLabel"
         android:layout_below="@+id/lapCounterLabel"
         android:layout_alignParentLeft="true"
@@ -28,7 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Past Lap Times:"
+        android:text="@string/past_lap_times"
         android:id="@+id/pastLapTimesLabel"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/lapCounterValue"
@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time Remaining:"
+        android:text="@string/time_remaining"
         android:id="@+id/timeRemainingLabel"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -81,7 +81,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0:00:00"
-        android:id="@+id/timeRemainingValue"
+        android:id="@+id/textView"
         android:layout_alignTop="@+id/timeRemainingLabel"
         android:layout_alignLeft="@+id/speedometerValue"
         android:layout_alignStart="@+id/speedometerValue" />
