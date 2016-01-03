@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CarUI</string>
+    <string name="lap_counter">Lap Counter:</string>
+    <string name="speedometer">Speedometer:</string>
+    <string name="time_remaining">Time Remaining:</string>
+    <string name="past_lap_times">Past Lap Times:</string>
+</resources>

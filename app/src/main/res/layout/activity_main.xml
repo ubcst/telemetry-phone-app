@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lap Counter:"
+        android:id="@+id/lapCounterLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speedometer:"
+        android:id="@+id/SpeedometerLabel"
+        android:layout_below="@+id/lapCounterLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Past Lap Times:"
+        android:id="@+id/pastLapTimesLabel"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lapCounterValue"
+        android:layout_marginLeft="107dp"
+        android:layout_marginStart="107dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Remaining:"
+        android:id="@+id/timeRemainingLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/lapCounterValue"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/timeRemainingLabel"
+        android:layout_toEndOf="@+id/timeRemainingLabel"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:id="@+id/pastLapTimesValues"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/pastLapTimesLabel"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 km/h"
+        android:id="@+id/speedometerValue"
+        android:layout_alignTop="@+id/SpeedometerLabel"
+        android:layout_alignLeft="@+id/lapCounterValue"
+        android:layout_alignStart="@+id/lapCounterValue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:00:00"
+        android:id="@+id/timeRemainingValue"
+        android:layout_alignTop="@+id/timeRemainingLabel"
+        android:layout_alignLeft="@+id/speedometerValue"
+        android:layout_alignStart="@+id/speedometerValue" />
+
+</RelativeLayout>
